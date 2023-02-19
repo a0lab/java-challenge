@@ -35,4 +35,10 @@ public class Employee {
     @Column(name="DEPARTMENT")
     private String department;
 
+    public Employee(Long id, String name, Integer salary, String department) {
+        this.id = id;
+        this.name = name;
+        this.salary = salary;
+        this.department = department;
+    }
 }
