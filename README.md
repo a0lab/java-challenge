@@ -1,3 +1,26 @@
+## Note from Jayaraman Pancharathinam
+### Completed work items
+ 1. Added Unit Tests for EmployeeController
+ 2. Test added for CRUD operation for all success cases
+ 3. Custom Exception class added for ResourceNotFoundException
+ 4. Implemented ResourceNotFoundException in Delete employee method
+ 5. Added all parameter constructor for unit testing
+
+ ### Roadmap or planned work items
+ - Add test cases for alternative sucess scenarios
+ - Add test cases for failure cases
+ - Implement Exception handling in all missing methods
+ - Implement ResourceNotFoundException for get method of Employee resource
+ - Encapsulate REST API response with http ResponseEntity
+ - Add data validation in every endpoints
+ - Add Integration testing with all possible test cases
+ - Protect endpoints using oAuth server such as Keycloak
+ - Add caching logic for database calls
+
+ ## My Java Experience
+ - 6+ years experience in Java
+ - 2+ years experience in Spring Framework, Spring boot
+ - Recently worked with NodeJS, Apache ignite, Apache pulsar and C++ backends
 ### How to use this spring-boot project
 
 - Install packages with `mvn package`
