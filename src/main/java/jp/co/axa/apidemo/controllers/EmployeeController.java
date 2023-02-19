@@ -1,6 +1,7 @@
 package jp.co.axa.apidemo.controllers;
 
 import jp.co.axa.apidemo.entities.Employee;
+import jp.co.axa.apidemo.exception.ResourceNotFoundException;
 import jp.co.axa.apidemo.services.EmployeeService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -36,7 +37,7 @@ public class EmployeeController {
     }
 
     @DeleteMapping("/employees/{employeeId}")
-    public void deleteEmployee(@PathVariable(name="employeeId")Long employeeId){
+    public void deleteEmployee(@PathVariable(name="employeeId")Long employeeId) throws ResourceNotFoundException {
         employeeService.deleteEmployee(employeeId);
         System.out.println("Employee Deleted Successfully");
     }
