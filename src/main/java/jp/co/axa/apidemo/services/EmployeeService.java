@@ -1,6 +1,7 @@
 package jp.co.axa.apidemo.services;
 
 import jp.co.axa.apidemo.entities.Employee;
+import jp.co.axa.apidemo.exception.ResourceNotFoundException;
 
 import java.util.List;
 
@@ -10,9 +11,9 @@ public interface EmployeeService {
 
     public Employee getEmployee(Long employeeId);
 
-    public void saveEmployee(Employee employee);
+    public Employee saveEmployee(Employee employee);
 
-    public void deleteEmployee(Long employeeId);
+    public Long deleteEmployee(Long employeeId) throws ResourceNotFoundException;
 
-    public void updateEmployee(Employee employee);
+    public Employee updateEmployee(Employee employee);
 }
